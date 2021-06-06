@@ -1,22 +1,50 @@
 {
-  "name": "with-typescript",
-  "version": "1.0.0",
-  "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start",
-    "type-check": "tsc"
-  },
-  "dependencies": {
-    "next": "latest",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
-  },
-  "devDependencies": {
-    "@types/node": "^12.12.21",
-    "@types/react": "^17.0.2",
-    "@types/react-dom": "^17.0.1",
-    "typescript": "4.0"
-  },
-  "license": "MIT"
+    "name": "with-typescript",
+    "version": "1.0.0",
+    "scripts": {
+        "dev": "next",
+        "build": "next build",
+        "start": "next start",
+        "export": "next build && next export",
+        "lint": "eslint '*/**/*.{js,ts}' --quiet --fix",
+        "test": "jest",
+        "test:coverage": "jest --collect-coverage",
+        "test:update": "jest -u",
+        "type-check": "tsc"
+    },
+    "dependencies": {
+        "@emotion/react": "^11.4.0",
+        "@emotion/styled": "^11.3.0",
+        "@material-ui/core": "^5.0.0-alpha.35",
+        "@types/axios": "^0.14.0",
+        "@types/react-test-renderer": "^17.0.1",
+        "@types/styled-components": "^5.1.9",
+        "@typescript-eslint/eslint-plugin": "^4.26.0",
+        "@typescript-eslint/parser": "^4.26.0",
+        "axios": "^0.21.1",
+        "husky": "^6.0.0",
+        "lint-staged": "^11.0.0",
+        "next": "latest",
+        "prettier": "^2.3.1",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1",
+        "react-gtm-module": "^2.0.11",
+        "react-test-renderer": "^17.0.2",
+        "ts-jest": "^27.0.2"
+    },
+    "devDependencies": {
+        "@testing-library/react": "^11.2.7",
+        "@types/jest": "^26.0.23",
+        "@types/node": "^12.12.21",
+        "@types/react": "^17.0.2",
+        "@types/react-dom": "^17.0.1",
+        "eslint": "^7.28.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-prettier": "^3.4.0",
+        "eslint-plugin-react": "^7.24.0",
+        "eslint-plugin-react-hooks": "^4.2.0",
+        "jest": "^27.0.4",
+        "typescript": "4.0"
+    },
+    "license": "MIT"
 }
